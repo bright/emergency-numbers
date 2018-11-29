@@ -1,0 +1,22 @@
+{
+  "name": "emergency-numbers",
+  "version": "1.0.0",
+  "description": "A list of emergency numbers per country parsed from https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+  "main": "index.js",
+  "repository": "https://github.com/bright/emergency-numbers",
+  "author": "piotr@brightinventions.pl",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "DEBUG=* npx --node-arg $NODE_DEBUG_OPTION -- ts-node update.ts"
+  },
+  "devDependencies": {
+    "@types/debug": "^0.0.31",
+    "@types/jsdom": "^12.2.0",
+    "debug": "^4.1.0",
+    "jsdom": "^13.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6",
+    "world-countries": "^2.0.0"
+  }
+}
